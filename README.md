@@ -6,7 +6,7 @@ Automobile Maintenance Archive.
 
 The average age of a light vehicle in the United States is estimated at around 11.6 years in 2016. In light of an aging vehicle fleet and increasing shop rates ($80-$125 /hr.) many car owners have turned into do-it-yourself (DIY) shade tree mechanics.
 
-While maintaining your own vehicle helps saves money, it also creates a disconnect between the auto manufacturer and the consumer. Since owners are making less visits to the shop or dealership for repairs, there is less information available about your car's history. Even those repairs done by a mechanic can be overlooked, since each shop has it's own system for tracking repairs and this information is not shared with manufacturers or other shops.
+While maintaining your own vehicle helps save money, it also creates a disconnect between the auto manufacturer and the consumer. Since owners are making less visits to the shop or dealership for repairs, there is less information available about your car's history. Even those repairs done by a mechanic can be overlooked, since each shop has it's own system for tracking repairs and this information is not shared with manufacturers or other shops.
 
 I would like to create an Automobile Maintenance Archive website to serve as repository for those looking to track repairs, parts, warranties and recall history for their vehicles.
 

@@ -3,7 +3,7 @@
 | Date | Task | Hours | Notes|
 |------|------|-------|------|
 | 1/29/18| Set up project repository. | .5 | |
-| 2/6/18| Create problem statement, project plan, screen design, time log. | 3 | |
+| 2/6/18| Create problem statement, project plan, screen design, time log. | 4 | |
 
 
 Save below as example....
