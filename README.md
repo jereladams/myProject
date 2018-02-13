@@ -26,7 +26,7 @@ Screenshots from Automobile Maintenance Archive:
   * Tomcat's JDBC Realm Authentication
   * Admin role: create/read/update/delete (crud) of all data
   * User role: save vehicle repairs, parts list and warranties, edit data they have entered previously
-  * All: anyone can view their vehicle info and recall notices (no login)
+  * All: anyone can view the vehicle info and recall notices (no login required)
 * Database
   * MySQL
   * Store users and roles
@@ -53,7 +53,7 @@ Screenshots from Automobile Maintenance Archive:
   * Hibernat Search
 * Project Lombok to eliminate boilerplate code like getters/setters/equals
 * Unit Testing
-  * JUnit tests to achieve 80%+ code coverage
+  * Unit tests to achieve 80%+ code coverage
 * IDE: IntelliJ IDEA
 
 

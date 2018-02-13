@@ -4,6 +4,9 @@
 |------|------|-------|------|
 | 1/29/18| Set up project repository. | .5 | |
 | 2/6/18| Create problem statement, project plan, screen design, time log. | 4 | |
+| 2/7/16 | Watched Week 4 videos and completed exercise.   | 5  |   |
+| 2/9/16 | Watched Week 5 videos and began exercise.   | 2  |   |
+| 2/13/16 | Setup project structure, started creating db tables and entity classes.   | 2  |   |
 
 
 Save below as example....

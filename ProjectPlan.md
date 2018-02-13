@@ -1,26 +1,26 @@
 # Project Plan
 
 ### Week 3
-- [ ] Create project repository on GitHub
-- [ ] Create project structure in intellij and push
-- [ ] Add link to list of indie projects in student repo.
-- [ ] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used
-- [ ] Weekly TimeLog entry
-- [ ] Write project plan
-- [ ] Document preliminary application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub.
+- [x] Create project repository on GitHub
+- [x] Create project structure in intellij and push
+- [x] Add link to list of indie projects in student repo.
+- [x] Complete Problem Statement
+- [x] Determine possible Web Services or APIs to use
+- [x] List technologies, versions and how they will be used
+- [x] Weekly TimeLog entry
+- [x] Write project plan
+- [ ] Document preliminary application flow in text and pictures - I'll use wireframes that have clickable links for the screen design.
+- [x] Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub.
 
 ### Week 4
-- [ ] Finalize application flow and screen design.
-- [ ] Complete database design
-- [ ] Create the database and user table
+- [x] Finalize application flow and screen design.
+- [x] Complete database design
+- [x] Create the database and user table
 - [ ] Create the user entity class and annotate for hibernate
 - [ ] Create user dao
 - [ ] Create the test database
 - [ ] Create user dao unit tests
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [ ] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
