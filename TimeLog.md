@@ -4,13 +4,14 @@
 |------|------|-------|------|
 | 1/29/18| Set up project repository. | .5 | |
 | 2/6/18| Create problem statement, project plan, screen design, time log. | 4 | |
-| 2/7/16 | Watched Week 4 videos and completed exercise.   | 5  |   |
-| 2/9/16 | Watched Week 5 videos and began exercise.   | 2  |   |
-| 2/13/16 | Wireframe review in class. | .5 | |
-| 2/13/16 | Setup project structure, started creating db tables and entity classes.   | 2  |   |
-| 2/17/16 | Watched Week 5 videos and completed exercise.   | 5  |   |
-| 2/18/16 | Finished creating database, tables and relationships.|1.5|
-| 2/19/16 | Finished creating entity classes, relationships and generic DAO.|1.5|
+| 2/7/18 | Watched Week 4 videos and completed exercise.   | 5  |   |
+| 2/9/18 | Watched Week 5 videos and began exercise.   | 2  |   |
+| 2/13/18 | Wireframe review in class. | .5 | |
+| 2/13/18 | Setup project structure, started creating db tables and entity classes.   | 2  |   |
+| 2/17/18 | Watched Week 5 videos and completed exercise.   | 5  |   |
+| 2/18/18 | Finished creating database, tables and relationships.|1.5|
+| 2/19/18 | Finished creating entity classes, relationships and generic DAO.|1.5|
+| 2/20/18 | Starting creating tests.|2.0|
 
 
 Save below as example....
