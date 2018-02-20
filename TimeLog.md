@@ -6,17 +6,17 @@
 | 2/6/18| Create problem statement, project plan, screen design, time log. | 4 | |
 | 2/7/16 | Watched Week 4 videos and completed exercise.   | 5  |   |
 | 2/9/16 | Watched Week 5 videos and began exercise.   | 2  |   |
+| 2/13/16 | Wireframe review in class. | .5 | |
 | 2/13/16 | Setup project structure, started creating db tables and entity classes.   | 2  |   |
+| 2/17/16 | Watched Week 5 videos and completed exercise.   | 5  |   |
+| 2/18/16 | Finished creating database, tables and relationships.|1.5|
+| 2/19/16 | Finished creating entity classes, relationships and generic DAO.|1.5|
 
 
 Save below as example....
 | 1/24/16 | Added a little more detail to the journal and technologies used in the readme.md   | .5  |   |
 | 1/24/16 | Began researching the google maps api and weather services. Documented my findings in this repo | .5 | |
-| 1/29/16 | Wireframes, created project in intellij, recorded video of the process/converted/posted to youtube, journal entry and updates to the project plan, created jsps | 4 | |
-| 1/30/16 | Wireframe review and updates | .5 | |
 | 2/2/16  | Added log4j, junit, hibernate, sql driver, geronimo, built first daos, updated week 3 details and exercises  | 4 | |
-| 2/5/16 | Design and create database tables, journal entry, time entry, plan update | 1.5
-| 2/5/16 | Created database diagram, added some missing foreign keys|.5|
 | 2/12/16| Added authentication - jsps in the user directory require user role, wrote up week 5 material| 3 |
 | 2/13/16| Added bootstrap. Added javascript/jquery to make current page "active" on navbar| 2 | |
 | 2/13/16| Added entity for each db table along with a first cut at the  hibernate config for each entity| 1 | |

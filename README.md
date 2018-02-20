@@ -50,7 +50,7 @@ Screenshots from Automobile Maintenance Archive:
 * Independent Research Topic/s
   * CI tools in AWS
   * Hibernate Validation
-  * Hibernat Search
+  * Hibernate Search
 * Project Lombok to eliminate boilerplate code like getters/setters/equals
 * Unit Testing
   * Unit tests to achieve 80%+ code coverage
