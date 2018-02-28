@@ -2,7 +2,7 @@ package com.myRide.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -38,10 +38,10 @@ public class Car {
     private String vin;
 
     @Column(name = "create_time")
-    private LocalDate createTime;
+    private Timestamp createTime;
 
     @Column(name = "update_time")
-    private LocalDate updateTime;
+    private Timestamp updateTime;
 
     public int getId() {
         return id;
@@ -99,31 +99,44 @@ public class Car {
         this.vin = vin;
     }
 
-    public LocalDate getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(LocalDate createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public LocalDate getUpdateTime() {
+    public Timestamp getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(LocalDate updateTime) {
+    public void setUpdateTime(Timestamp updateTime) {
         this.updateTime = updateTime;
     }
 
     public Car() {
     }
 
-    public Car(User user, String year, String make, String model, String vin) {
+    public Car(User user, String year, String make, String model, String vin, Timestamp createTime, Timestamp updateTime  ) {
         this.user = user;
         this.year = year;
         this.make = make;
         this.model = model;
         this.vin = vin;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public Car(int id, User user, String year, String make, String model, String vin, Timestamp createTime, Timestamp updateTime  ) {
+        this.id = id;
+        this.user = user;
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.vin = vin;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
     }
 
     @Override

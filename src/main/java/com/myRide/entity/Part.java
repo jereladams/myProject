@@ -2,7 +2,7 @@ package com.myRide.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 
@@ -28,7 +28,7 @@ public class Part {
     private String manufacturer;
 
     @Column(name = "part_number")
-    private String part_Number;
+    private String partNumber;
 
     @Column(name = "warranty")
     private String warranty;
@@ -43,10 +43,10 @@ public class Part {
     private String description;
 
     @Column(name = "create_time")
-    private LocalDateTime createTime;
+    private Timestamp createTime;
 
     @Column(name = "update_time")
-    private LocalDateTime updateTime;
+    private Timestamp updateTime;
 
     public int getId() {
         return id;
@@ -80,12 +80,12 @@ public class Part {
         this.manufacturer = manufacturer;
     }
 
-    public String getPart_Number() {
-        return part_Number;
+    public String getPartNumber() {
+        return partNumber;
     }
 
-    public void setPart_Number(String part_Number) {
-        this.part_Number = part_Number;
+    public void setPartNumber(String partNumber) {
+        this.partNumber = partNumber;
     }
 
     public String getWarranty() {
@@ -120,23 +120,50 @@ public class Part {
         this.description = description;
     }
 
-    public LocalDateTime getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(LocalDateTime createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public LocalDateTime getUpdateTime() {
+    public Timestamp getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(LocalDateTime updateTime) {
+    public void setUpdateTime(Timestamp updateTime) {
         this.updateTime = updateTime;
     }
 
     public Part() {
+    }
+
+    public Part(Repair repair, String partName, String manufacturer, String partNumber, String warranty, String supplier, double price, String description, Timestamp createTime, Timestamp updateTime) {
+        this.repair = repair;
+        this.partName = partName;
+        this.manufacturer = manufacturer;
+        this.partNumber = partNumber;
+        this.warranty = warranty;
+        this.supplier = supplier;
+        this.price = price;
+        this.description = description;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public Part(int Id, Repair repair, String partName, String manufacturer, String partNumber, String warranty, String supplier, double price, String description, Timestamp createTime, Timestamp updateTime) {
+        this.id = Id;
+        this.repair = repair;
+        this.partName = partName;
+        this.manufacturer = manufacturer;
+        this.partNumber = partNumber;
+        this.warranty = warranty;
+        this.supplier = supplier;
+        this.price = price;
+        this.description = description;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
     }
 
     @Override
@@ -146,10 +173,9 @@ public class Part {
         Part part = (Part) o;
         return id == part.id &&
                 Double.compare(part.price, price) == 0 &&
-                Objects.equals(repair, part.repair) &&
                 Objects.equals(partName, part.partName) &&
                 Objects.equals(manufacturer, part.manufacturer) &&
-                Objects.equals(part_Number, part.part_Number) &&
+                Objects.equals(partNumber, part.partNumber) &&
                 Objects.equals(warranty, part.warranty) &&
                 Objects.equals(supplier, part.supplier) &&
                 Objects.equals(description, part.description) &&
@@ -160,6 +186,6 @@ public class Part {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, repair, partName, manufacturer, part_Number, warranty, supplier, price, description, createTime, updateTime);
+        return Objects.hash(id, partName, manufacturer, partNumber, warranty, supplier, price, description, createTime, updateTime);
     }
 }

@@ -12,6 +12,10 @@
 | 2/18/18 | Finished creating database, tables and relationships.|1.5|
 | 2/19/18 | Finished creating entity classes, relationships and generic DAO.|1.5|
 | 2/20/18 | Starting creating tests.|2.0|
+| 2/25/18 | Finished peer reviews.   | 1  |   |
+| 2/26/18 | Watched Week 6 videos and completed exercise.   | 5  |   |
+| 2/27/18 | Finished creating tests.   | 2  |   |
+
 
 
 Save below as example....

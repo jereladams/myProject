@@ -3,9 +3,11 @@ package com.myRide.persistence;
 import com.myRide.entity.Car;
 import com.myRide.entity.User;
 import com.myRide.testUtils.Database;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -37,71 +39,75 @@ public class CarTest {
     }
 
     /**
-     * Verifies a user is returned correctly based on id search
+     * Verifies a car is returned correctly based on id search
      */
     @Test
     void getByIdSuccess() {
+        //Get User
+        GenericDao<User>  userDao = new GenericDao(User.class);
+        User user = userDao.getById(1);
+
+        //Create TimeStamp
+        Timestamp timestamp =  Timestamp.valueOf("2018-01-01 12:00:00");
+
+        //Create Test Car
+        Car testCar = new Car(1,user,"2001","Jeep","Grand Cherokee","12345678901234567",timestamp,timestamp);
+
+        //Get Existing Car
         Car retrievedCar = carDao.getById(1);
         assertNotNull(retrievedCar);
-        assertEquals("Jeep",retrievedCar.getMake());
+
+        //Compare Cars
+        assertEquals(testCar,retrievedCar);
     }
 
     /**
-     * Verify successful insert of a user
+     * Verify successful insert of a car
      */
     @Test
     void insertSuccess() {
+        int insertedCarId;
 
+        //Get User
         GenericDao<User>  userDao = new GenericDao(User.class);
-
         User user = userDao.getById(1);
 
-        Car newCar = new Car(user,"2003","Ford","Taurus","12345");
+        //Create TimeStamp
+        Timestamp timestamp =  Timestamp.valueOf("2018-01-01 12:00:00");
 
-        int id = carDao.insert(newCar);
-        assertNotEquals(0,id);
-        Car insertedCar = carDao.getById(id);
-        assertNotNull(insertedCar);
-        assertEquals(newCar,insertedCar);
-    }
+        //Create Inserted Car
+        Car insertedCar = new Car(user,"2016","Honda","Civic","3335678901244444",timestamp,timestamp);
 
-    /**
-     * Verify successful insert of a user
-     */
+        //Save Inserted Car
+        insertedCarId = carDao.insert(insertedCar);
 
-    /**
-     @Test
-     void insertWithBookSuccess() {
-     User newUser = new User("test@email.com", "password");
-     Book book = new Book( "Book 1", newUser, "123-4-56789",   1973);
-     newUser.addBook(book);
-     int id = dao.insert(newUser);
-     assertNotEquals(0,id);
-     User insertedUser = dao.getById(id);
-     assertNotNull(insertedUser);
-     assertEquals(newUser, insertedUser);
-     assertNotNull(insertedUser.getBooks());
-     assertEquals(1, insertedUser.getBooks().size());
+        //Get Saved Car
+        Car retrievedCar = carDao.getById(insertedCarId);
+        assertNotNull(retrievedCar);
+
+        //Compare Cars
+        assertEquals(insertedCar,retrievedCar);
      }
-     */
 
     /**
-     * Verify successful delete of user & books
+     * Verify successful delete of car, repairs and parts
      *
-     * Note: added some extra tests for practice
      */
     @Test
     void deleteSuccess() {
         carDao.delete(carDao.getById(1));
         assertNull(carDao.getById(1));
+
+    //  TODO: add testing for deleting repairs & parts
+
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update of car
      */
     @Test
     void updateSuccess() {
-        String year = "2010";
+        String year = "2017";
         Car carToUpdate = carDao.getById(1);
         carToUpdate.setYear(year);
         carDao.saveOrUpdate(carToUpdate);

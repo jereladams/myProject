@@ -16,18 +16,19 @@
 - [x] Finalize application flow and screen design.
 - [x] Complete database design
 - [x] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
-- [ ] Create user dao unit tests
 - [x] Weekly journal entry
-- [ ] Set up logging
-- [ ] Create class uml diagram
-- [ ] Prepare for Week 5 peer design/code review
-
+- [x] Prepare for Week 5 peer design/code review
 
 ### Week 5
+- [x] Create the user entity class and annotate for hibernate
+- [x] Create user dao
+- [x] Create the test database
+- [x] Create user dao unit tests
+- [x] Weekly journal entry
 
+### Week 6
+- [ ] Set up logging
+- [ ] Create class uml diagram
 - [ ] Create the template for all jsps using bootstrap or materialize
 - [ ] Weekly journal entry
 - [ ] Add the role table
@@ -37,8 +38,7 @@
 - [ ] Add a jsp to display user and role
 - [ ] Add jsp to add a user
 
-### Week 6
-
+### Week 7
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
@@ -50,9 +50,7 @@
 - [ ] Build the trail add/update/delete jsp
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created.
 
-
 ### Week 7
-
 - [ ] Weekly journal entry
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
@@ -62,9 +60,7 @@
 - [ ] Update Trail and Trail report tests to be sure they work with the new relationships
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
-
 ### Week 8
-
 - [ ] Weekly journal entry
 - [ ] Integration with google maps api
 - [ ] Create trail report table (test, dev and prod dbs)

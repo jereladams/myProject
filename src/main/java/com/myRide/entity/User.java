@@ -52,13 +52,13 @@ public class User {
         this.id = id;
     }
 
-/*    public Set<Car> getCars() {
+    public Set<Car> getCars() {
         return cars;
     }
 
     public void setCars(Set<Car> cars) {
         this.cars = cars;
-    }*/
+    }
 
     public String getEmail() {
         return email;

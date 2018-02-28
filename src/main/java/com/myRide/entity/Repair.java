@@ -3,7 +3,7 @@ package com.myRide.entity;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -51,10 +51,10 @@ public class Repair {
     private String description;
 
     @Column(name = "create_time")
-    private LocalDateTime createTime;
+    private Timestamp createTime;
 
     @Column(name = "update_time")
-    private LocalDateTime updateTime;
+    private Timestamp updateTime;
 
     public int getId() {
         return id;
@@ -144,23 +144,52 @@ public class Repair {
         this.description = description;
     }
 
-    public LocalDateTime getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(LocalDateTime createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public LocalDateTime getUpdateTime() {
+    public Timestamp getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(LocalDateTime updateTime) {
+    public void setUpdateTime(Timestamp updateTime) {
         this.updateTime = updateTime;
     }
 
     public Repair() {
+    }
+
+    public Repair(Car car, LocalDate serviceDate, String invoiceNumber, String serviceProvider, double laborCost, Integer currentMileage, String warranty, String servicePerformed, String description, Timestamp createTime, Timestamp updateTime) {
+        this.car = car;
+        this.serviceDate = serviceDate;
+        this.invoiceNumber = invoiceNumber;
+        this.serviceProvider = serviceProvider;
+        this.laborCost = laborCost;
+        this.currentMileage = currentMileage;
+        this.warranty = warranty;
+        this.servicePerformed = servicePerformed;
+        this.description = description;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public Repair(int id, Car car, LocalDate serviceDate, String invoiceNumber, String serviceProvider, double laborCost, Integer currentMileage, String warranty, String servicePerformed, String description, Timestamp createTime, Timestamp updateTime) {
+        this.id = id;
+        this.car = car;
+        this.serviceDate = serviceDate;
+        this.invoiceNumber = invoiceNumber;
+        this.serviceProvider = serviceProvider;
+        this.laborCost = laborCost;
+        this.currentMileage = currentMileage;
+        this.warranty = warranty;
+        this.servicePerformed = servicePerformed;
+        this.description = description;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
     }
 
     @Override

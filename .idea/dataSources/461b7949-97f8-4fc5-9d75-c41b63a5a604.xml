@@ -1061,84 +1061,95 @@
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="261" parent="234" name="PRIMARY">
+    <index id="261" parent="234" name="parts_repairs_id_fk">
+      <ColNames>repair_id</ColNames>
+    </index>
+    <key id="262" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="262" parent="235" name="id">
+    <foreign-key id="263" parent="234" name="parts_repairs_id_fk">
+      <ColNames>repair_id</ColNames>
+      <RefSchemaName>my_ride</RefSchemaName>
+      <RefTableName>repairs</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="264" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="235" name="car_id">
+    <column id="265" parent="235" name="car_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="235" name="service_date">
+    <column id="266" parent="235" name="service_date">
       <Position>3</Position>
       <DataType>date|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="235" name="invoice_number">
+    <column id="267" parent="235" name="invoice_number">
       <Position>4</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="235" name="service_provider">
+    <column id="268" parent="235" name="service_provider">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="235" name="labor_cost">
+    <column id="269" parent="235" name="labor_cost">
       <Position>6</Position>
       <DataType>double|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="235" name="current_mileage">
+    <column id="270" parent="235" name="current_mileage">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="235" name="warranty">
+    <column id="271" parent="235" name="warranty">
       <Position>8</Position>
       <DataType>varchar(45)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="235" name="service_performed">
+    <column id="272" parent="235" name="service_performed">
       <Position>9</Position>
       <DataType>varchar(100)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="235" name="description">
+    <column id="273" parent="235" name="description">
       <Position>10</Position>
       <DataType>varchar(500)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="235" name="create_time">
+    <column id="274" parent="235" name="create_time">
       <Position>11</Position>
       <DataType>timestamp|0</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="235" name="update_time">
+    <column id="275" parent="235" name="update_time">
       <Position>12</Position>
       <DataType>timestamp|0</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="274" parent="235" name="repairs_cars_id_fk">
+    <index id="276" parent="235" name="repairs_cars_id_fk">
       <ColNames>car_id</ColNames>
     </index>
-    <key id="275" parent="235" name="PRIMARY">
+    <key id="277" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="276" parent="235" name="repairs_cars_id_fk">
+    <foreign-key id="278" parent="235" name="repairs_cars_id_fk">
       <ColNames>car_id</ColNames>
       <RefSchemaName>my_ride</RefSchemaName>
       <RefTableName>cars</RefTableName>
@@ -1146,54 +1157,54 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="277" parent="236" name="id">
+    <column id="279" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="236" name="email">
+    <column id="280" parent="236" name="email">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="236" name="password">
+    <column id="281" parent="236" name="password">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="236" name="create_time">
+    <column id="282" parent="236" name="create_time">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="236" name="update_time">
+    <column id="283" parent="236" name="update_time">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="282" parent="236" name="id_UNIQUE">
+    <index id="284" parent="236" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="283" parent="236" name="email_UNIQUE">
+    <index id="285" parent="236" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="284" parent="236" name="PRIMARY">
+    <key id="286" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="285" parent="236" name="id_UNIQUE">
+    <key id="287" parent="236" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
     </key>
-    <key id="286" parent="236" name="email_UNIQUE">
+    <key id="288" parent="236" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email_UNIQUE</UnderlyingIndexName>
     </key>
