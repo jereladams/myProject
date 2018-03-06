@@ -1,0 +1,8 @@
+<Context docBase="myProject" path="/myProject" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/my_Ride?user=tomcat&amp;password=tomcat"
+           userTable="users" userNameCol="email" userCredCol="password"
+           userRoleTable="roles" roleNameCol="role_name" >
+    </Realm>
+</Context>
