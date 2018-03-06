@@ -14,7 +14,10 @@
 | 2/20/18 | Starting creating tests.|2.0|
 | 2/25/18 | Finished peer reviews.   | 1  |   |
 | 2/26/18 | Watched Week 6 videos and completed exercise.   | 5  |   |
-| 2/27/18 | Finished creating tests.   | 2  |   |
+| 3/3/18 | Searched for web templates and messed around with some formats.   | 3  |   |
+| 3/3/18 | Searched for web templates and played around with some formatting.   | 3  |   |
+| 3/4/18 | Watched Week 7 videos and completed exercise.   | 3  |   |
+
 
 
 

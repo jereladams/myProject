@@ -30,9 +30,9 @@
 - [ ] Set up logging
 - [ ] Create class uml diagram
 - [ ] Create the template for all jsps using bootstrap or materialize
-- [ ] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
+- [x] Weekly journal entry
+- [x] Add the role table
+- [x] Add the role entity
 - [ ] Create the role dao
 - [ ] Create the role dao unit tests
 - [ ] Add a jsp to display user and role
