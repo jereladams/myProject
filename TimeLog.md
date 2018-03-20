@@ -17,6 +17,8 @@
 | 3/3/18 | Searched for web templates and messed around with some formats.   | 3  |   |
 | 3/3/18 | Searched for web templates and played around with some formatting.   | 3  |   |
 | 3/4/18 | Watched Week 7 videos and completed exercise.   | 3  |   |
+| 3/6/18 | Figured out how to copy mySQL connector jar using Filezilla.   | 4  |   |
+| 3/20/18 | Watched Week 8 videos and completed activity 3.   | 2  |   |
 
 
 

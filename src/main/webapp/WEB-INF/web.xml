@@ -13,21 +13,21 @@
     </form-login-config>
   </login-config>
 
-  <!-- Protect the registered user page. -->
+  <!-- Protect the admin & registered user pages. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>registeredUser</web-resource-name>
+      <web-resource-name>user</web-resource-name>
       <url-pattern>/garage.jsp</url-pattern>
     </web-resource-collection>
 
     <auth-constraint>
-      <role-name>registeredUser</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
 
   </security-constraint>
 
   <security-role>
-    <role-name>registeredUser</role-name>
+    <role-name>user</role-name>
   </security-role>
 
 </web-app>
