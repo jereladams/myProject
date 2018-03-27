@@ -19,6 +19,7 @@
 | 3/4/18 | Watched Week 7 videos and completed exercise.   | 3  |   |
 | 3/6/18 | Figured out how to copy mySQL connector jar using Filezilla.   | 4  |   |
 | 3/20/18 | Watched Week 8 videos and completed activity 3.   | 2  |   |
+| 3/27/18 | Watched Week 9 videos and completed activity 1-4.   | 4  |   |
 
 
 

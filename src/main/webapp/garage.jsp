@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!doctype html>
 <html>
 <head>
@@ -187,6 +189,42 @@ http://www.tooplate.com/view/2079-garage
 
 	</div>
 </div>
+
+<div>
+
+	<form action="viewCars" method="GET" class="form-inline">
+
+		<h4><b>User Search:</b></h4>
+
+		<div class="form-group">
+
+			<input class="form-control" type="text" name="value" id="value" placeholder="Enter Value" autofocus>
+
+			<input type="submit" class="btn btn-primary" id="submit" value="Search" />
+		</div>
+	</form>
+
+<h4><b>Search Results:</b></h4>
+
+<table class="table table-striped">
+	<tr>
+		<th>ID</th>
+		<th>Year</th>
+		<th>Make</th>
+		<th>Model</th>
+	</tr>
+
+	<c:forEach var="car" items="${cars}" >
+		<tr>
+			<td>${car.id}</td>
+			<td>${car.year}</td>
+			<td>${car.make}</td>
+			<td>${car.model}</td>
+		</tr>
+	</c:forEach>
+</table>
+</div>
+
 <div class="footer">
 	<div class="copyright">
 		&copy; Copy right 2016 | <a href="#">Privacy </a>| <a href="#">Policy</a>
