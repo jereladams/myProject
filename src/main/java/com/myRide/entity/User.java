@@ -1,10 +1,9 @@
 package com.myRide.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -22,6 +21,7 @@ public class User {
     private int id;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JsonIgnore
     private Set<Car> cars = new HashSet<>();
 
     @Column(name = "email")
@@ -35,6 +35,10 @@ public class User {
 
     @Column(name = "update_time")
     private LocalDateTime updateTime;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JsonIgnore
+    private Role role;
 
     public User() {
     }
@@ -92,6 +96,14 @@ public class User {
         this.updateTime = updateTime;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -113,7 +125,7 @@ public class User {
                 Objects.equals(password, user.password) &&
                 Objects.equals(createTime, user.createTime) &&
                 Objects.equals(updateTime, user.updateTime);
-    }
+}
 
     @Override
     public int hashCode() {

@@ -28,8 +28,6 @@ import java.util.List;
 
             req.setAttribute("cars", cars);
 
-            //log.debug("Sending back the trail/s..." + trails);
-
             RequestDispatcher dispatcher = req.getRequestDispatcher("/garage" +
                     ".jsp");
             dispatcher.forward(req, resp);

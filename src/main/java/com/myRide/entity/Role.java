@@ -4,7 +4,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Objects;
 
-
 @Entity(name = "Role")
 @Table(name = "roles")
 public class Role {
@@ -14,7 +13,7 @@ public class Role {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @ManyToOne
+    @OneToOne
     private User user;
 
     @Column(name="email")

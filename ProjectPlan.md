@@ -5,7 +5,7 @@
 - [x] Create project structure in intellij and push
 - [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
-- [x] Determine possible Web Services or APIs to use
+- [x] Determine possible Web ApplicationService or APIs to use
 - [x] List technologies, versions and how they will be used
 - [x] Weekly TimeLog entry
 - [x] Write project plan

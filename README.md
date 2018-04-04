@@ -35,7 +35,7 @@ Screenshots from Automobile Maintenance Archive:
   * Hibernate 5
 * Dependency Management
   * Maven
-* Web Services consumed using Java
+* Web ApplicationService consumed using Java
   * https://vpic.nhtsa.dot.gov/api/ to decode VIN
   * https://one.nhtsa.gov/webapi/Default.aspx?Recalls/API/83 to lookup recalls
 * CSS
