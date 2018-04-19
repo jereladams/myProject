@@ -12,11 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-    @WebServlet(name = "ViewCars", urlPatterns = {"/viewCars"})
+    @WebServlet(name = "ViewCars", urlPatterns = {"/viewcars"})
 
     public class ViewCars extends HttpServlet {
-
-        //private final Logger log = Logger.getLogger(this.getClass());
 
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -28,8 +26,7 @@ import java.util.List;
 
             req.setAttribute("cars", cars);
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/garage" +
-                    ".jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/cars.jsp");
             dispatcher.forward(req, resp);
         }
     }

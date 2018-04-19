@@ -20,6 +20,13 @@
 | 3/6/18 | Figured out how to copy mySQL connector jar using Filezilla.   | 4  |   |
 | 3/20/18 | Watched Week 8 videos and completed activity 3.   | 2  |   |
 | 3/27/18 | Watched Week 9 videos and completed activity 1-4.   | 4  |   |
+| 4/1/18 | Finished Week 9 activity.   | 2  |   |
+| 4/2/18 | Watched Week 11 videos and completed exercise.   | 2  |   |
+| 4/10/18 | Team Project  | 10  |   |
+| 4/11/18 | Broke out jsp's elements into separate pages.  | 2  |   |
+| 4/17/18 | Started creating jsp's pages.  | 3  |   |
+| 4/15/18 | Worked on jsp's pages.  | 5  |   |
+
 
 
 
